@@ -1,6 +1,7 @@
 public class OutPut {
-    String numberString = "";
-    public void setDrops(int i) {
+    private String numberString = "";
+
+    public String setDrops(int i) {
         if (i == 3) {
             numberString += "Pling";
         } else if (i == 5) {
@@ -8,13 +9,15 @@ public class OutPut {
         } else if (i == 7) {
             numberString += "Plong";
         }
+
+        return numberString;
     }
 
     public void printDrops(int n){
         if(numberString == ""){
-            System.out.println(n);
+            System.out.print(n);
         } else {
-            System.out.println(numberString);
+            System.out.print(numberString);
         }
     }
 }
